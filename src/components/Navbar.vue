@@ -14,7 +14,7 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-    <b-button v-b-toggle.sidebar-backdrop class="mr-2 text-white"><font-awesome-icon icon="bars" /></b-button>
+    <b-button v-b-toggle.sidebar-backdrop class="mr-2 text-custom m-0"><font-awesome-icon icon="bars" /></b-button>
     <b-sidebar
       id="sidebar-backdrop"
       title="Hello, Sigin"
@@ -119,12 +119,12 @@
        </div>
     </b-sidebar>
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+          <b-form-input class="mr-sm-2" placeholder="Search"></b-form-input>
+          <b-button class="my-2 my-sm-0" type="submit">Search</b-button>
         </b-nav-form>
-                <b-nav-item href="#">Women</b-nav-item>
-        <b-nav-item href="#">Men</b-nav-item>
-                <b-nav-item href="#">Men</b-nav-item>
+                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'user']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
+                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
+                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -143,18 +143,15 @@ export default {
  }
 
  .accordion-btn, .accordion-btn:hover,.accordion-btn:focus, .btn-secondary:focus {
-   background: transparent !important;
+   background: white !important;
    color: black !important;
    text-align: left !important; 
    border: none !important;
    font-weight: bold !important;
    box-shadow: none !important;
  }
-  .text-white {
-    color: white !important;
-    border: 1px solid white !important;
-  }
   .navbar-dark .navbar-nav .nav-link {
     color: white;
   }
+
 </style>

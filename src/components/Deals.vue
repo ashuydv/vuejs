@@ -8,64 +8,72 @@
                 <VueSlickCarousel v-bind="settings">
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
+                            <font-awesome-icon icon="heart"></font-awesome-icon>
+<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img class="p-3" src="../assets/eyeshadow-GlamUP.png" fluid /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                             <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
+<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/30064537.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                             <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
+<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/download.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                             <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
+                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/KKT2671.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                                                         <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                                  <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
+                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                                                         <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
+                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                                                         <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
+                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>4,600 <span class="small">MRP: 5,750</span></p>
+                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
                                        <b-button block class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
@@ -122,5 +130,8 @@ export default {
         text-align: center !important;
         font-weight: normal !important;
         border: 1px solid transparent!important;
+    }
+    .small {
+        text-decoration: line-through;
     }
 </style>
