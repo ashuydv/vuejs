@@ -12,8 +12,8 @@
                             <div><b-img class="p-3" src="../assets/eyeshadow-GlamUP.png" fluid /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                            <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                            <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
@@ -22,8 +22,8 @@
                             <div><b-img fluid class="p-3" src="../assets/30064537.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                            <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                            <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
@@ -32,8 +32,8 @@
                             <div><b-img fluid class="p-3" src="../assets/download.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                            <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                            <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
@@ -42,8 +42,8 @@
                             <div><b-img fluid class="p-3" src="../assets/KKT2671.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                                                        <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                                                        <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                                  <b-col class="d-flex align-items-center flex-column"> 
@@ -52,8 +52,8 @@
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                                                        <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                                                        <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
@@ -62,8 +62,8 @@
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                                                        <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                                                        <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
@@ -72,8 +72,8 @@
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
-                            <p>&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
-                                       <b-button block class="btn">ADD TO BAG</b-button>
+                            <p class="mb-4">&#8377; 4,600 <span class="small">MRP: &#8377;  5,750</span></p>
+                                       <b-button class="btn">ADD TO BAG</b-button>
                         </b-card>
                     </b-col>
                     </VueSlickCarousel>
@@ -148,7 +148,11 @@ export default {
         color: #7954A1 !important;
         background: transparent;
         text-align: center;
-    }
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+   }
     .deals-container .btn:hover, .deals-container .btn:focus {
         background:#7954A1 !important;
         color: white !important;

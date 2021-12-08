@@ -57,7 +57,17 @@
                             <li>Dresses for girls</li>
                             <li>Dresses for girls</li>
                             <li>Dresses for girls</li>                        </ul>
-                    </b-col>
+
+                            <h6>TOP CATEGORIES</h6>
+                            <div class="d-flex align-items-center justify-content-between py-2">
+                                <font-awesome-icon :icon="['fab', 'facebook-f']"></font-awesome-icon>
+                                <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon>
+                                          <font-awesome-icon :icon="['fab', 'twitter']"></font-awesome-icon>
+            
+                                <font-awesome-icon :icon="['fab', 'whatsapp']"></font-awesome-icon>
+                                <font-awesome-icon :icon="['fab', 'youtube']"></font-awesome-icon>
+                            </div>
+                   </b-col>
                 </b-row>
             </b-container>
             <div class="payment text-center" >
