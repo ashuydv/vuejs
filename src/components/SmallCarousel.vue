@@ -2,10 +2,10 @@
     <div class="pb-4 m-0">
         <div >
             <VueSlickCarousel v-bind="settings">
-                <b-img src="https://dummyimage.com/600x200/" fluid alt="Responsive image" ></b-img>
-                <b-img src="https://dummyimage.com/600x200/" fluid alt="Responsive image" ></b-img>
-                <b-img src="https://dummyimage.com/600x200/" fluid alt="Responsive image" ></b-img>
-                <b-img src="https://dummyimage.com/600x200/" fluid alt="Responsive image" ></b-img>
+                <b-img src="../assets/banner.jpg" fluid alt="Responsive image" ></b-img>
+                <b-img src="../assets/banner.jpg" fluid alt="Responsive image" ></b-img>
+                <b-img src="../assets/banner.jpg" fluid alt="Responsive image" ></b-img>
+                <b-img src="../assets/banner.jpg" fluid alt="Responsive image" ></b-img>
             </VueSlickCarousel>
         </div> 
     </div>

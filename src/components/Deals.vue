@@ -8,8 +8,7 @@
                 <VueSlickCarousel v-bind="settings">
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
-                            <font-awesome-icon icon="heart"></font-awesome-icon>
-<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+                            <font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img class="p-3" src="../assets/eyeshadow-GlamUP.png" fluid /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -19,7 +18,7 @@
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
-<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+<font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/30064537.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -29,7 +28,7 @@
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
-<font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+<font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/download.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -39,7 +38,7 @@
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card class="p-0">
-                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+                            <font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="../assets/KKT2671.jpg" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -49,7 +48,7 @@
                     </b-col>
                                  <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
-                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+                            <font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -59,7 +58,7 @@
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
-                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+                            <font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -69,7 +68,7 @@
                     </b-col>
                     <b-col class="d-flex align-items-center flex-column"> 
                         <b-card>
-                            <font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, margin-left: 10rem; " />
+                            <font-awesome-icon :icon="['far', 'heart']" class="icons-heart" style="font-size: 12px, margin-left: 10rem; " />
                             <div><b-img fluid class="p-3" src="https://dummyimage.com/180x180/000/fff" /></div>
                             <b-card-title>Jacqueline USA</b-card-title>
                             <p class="mb-1">Eyeshadow Palette</p>
@@ -105,7 +104,33 @@ export default {
                 "speed": 500,
                 "cssEase": "linear",
                 "slidesToShow": 4,
-                "slidesToScroll": 1
+                "slidesToScroll": 1,
+                "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
             }
         }
     },
@@ -118,13 +143,13 @@ export default {
         margin: 10px auto;
         max-width: 1200px;
     }
-    .btn {
+    .deals-container .btn {
         border: 1px solid #7954A1 !important;
         color: #7954A1 !important;
         background: transparent;
         text-align: center;
     }
-    .btn:hover, .btn:focus {
+    .deals-container .btn:hover, .deals-container .btn:focus {
         background:#7954A1 !important;
         color: white !important;
         text-align: center !important;
@@ -134,4 +159,19 @@ export default {
     .small {
         text-decoration: line-through;
     }
+    .deals-container .slick-prev {
+  left: 3% !important;
+  z-index: 10;
+  color: #7954A1;
+  opacity: 1 !important;
+}
+.deals-container .slick-next {
+  right: 3% !important;
+    color: #7954A1;
+}
+.deals-container .icons-heart {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
 </style>

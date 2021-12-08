@@ -1,10 +1,10 @@
 <template>
-    <div class="py-3">
+    <div class="py-3 categories">
         <div class='container' >
-            <h2 class="py-3">CATEGORIES</h2>
+            <h2 class="py-4">CATEGORIES</h2>
             <b-container>
             <b-row>
-                            <VueSlickCarousel v-bind="settings">
+            <VueSlickCarousel v-bind="settings">
                 <b-col class="d-flex align-items-center flex-column"><b-img v-bind="mainProps" class=" circle border border-purple rounded-circle" src="../assets/shirt.jpg" fluid /> <h3>T-Shirts</h3> </b-col>
                 <b-col class="d-flex align-items-center flex-column"><b-img v-bind="mainProps" class=" circle border border-purple rounded-circle" src="../assets/shoes.jpg" fluid /> <h3>T-Shirts</h3> </b-col>  
                 <b-col class="d-flex align-items-center flex-column"><b-img v-bind="mainProps" class=" circle border border-purple rounded-circle" src="../assets/menShoes.png" fluid /> <h3>T-Shirts</h3> </b-col>     
@@ -36,7 +36,7 @@ export default {
     components: {VueSlickCarousel},
     data() {
         return {
-            mainProps: {width: 150, height: 100, class: 'm1', center: true,},
+            mainProps: { class: 'm1', center: true,},
             settings: {
                 "arrows": true,
                 "dotsClass": "slick-dots custom-dot-class",
@@ -46,7 +46,33 @@ export default {
                 "speed": 500,
                 "cssEase": "linear",
                 "slidesToShow": 4,
-                "slidesToScroll": 1
+                "slidesToScroll": 1,
+                "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
             }
         }
     },
@@ -56,4 +82,14 @@ export default {
     .border-purple {
         border: 2px solid purple  !important;
     }
+    .categories .slick-prev {
+  left: 3% !important;
+  top: 45% !important;
+  z-index: 10;
+}
+.categories .slick-next {
+  right: 3% !important;
+  top: 45% !important;
+  z-index: 10;
+}
 </style>

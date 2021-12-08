@@ -63,11 +63,11 @@
             <div class="payment text-center" >
                 <h6>PAYMENT</h6>
                 <b-button-group>
-      <b-button variant="success" >Button 1</b-button>
-      <b-button variant="info">Button 2</b-button>
-      <b-button variant="warning">Button 3</b-button>
-      <b-button variant="primary">Button 2</b-button>
-      <b-button variant="secondary">Button 3</b-button>
+      <b-button size="sm" variant="success" >Button 1</b-button>
+      <b-button size="sm" variant="info">Button 2</b-button>
+      <b-button size="sm" variant="warning">Button 3</b-button>
+      <b-button size="sm" variant="primary">Button 2</b-button>
+      <b-button size="sm" variant="secondary">Button 3</b-button>
     </b-button-group>
             </div>
         </div>

@@ -2,7 +2,9 @@
     <div class="navbar-container" >
         <div class="container px-0">
   <b-navbar toggleable="lg" type="dark" variant="transparent">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar-brand href="#" class="logo">
+      <b-img class="images" src="../assets/Alluraa-Logo-WhiteHorizontal.png" fluid-grow alt=""/>
+    </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
@@ -13,8 +15,8 @@
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-    <b-button v-b-toggle.sidebar-backdrop class="mr-2 text-custom m-0"><font-awesome-icon icon="bars" /></b-button>
+      <b-navbar-nav class="ml-auto d-flex align-items-center ">
+    <b-button v-b-toggle.sidebar-backdrop class="mr-2 text-custom m-0 navbar-btns btn-sidebar"><font-awesome-icon icon="bars" /></b-button>
     <b-sidebar
       id="sidebar-backdrop"
       title="Hello, Sigin"
@@ -118,13 +120,15 @@
   </div>
        </div>
     </b-sidebar>
-        <b-nav-form>
+        <b-nav-form class="form">
           <b-form-input class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button class="my-2 my-sm-0" type="submit">Search</b-button>
+          <b-button class="my-2 my-sm-0 navbar-btns" type="submit">Search</b-button>
         </b-nav-form>
-                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'user']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
-                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
-                <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 10px, text-align: center" >Login</div> </b-nav-item>
+        <div class="end">
+          <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'user']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 4px, text-align: center" >Login</div> </b-nav-item>
+          <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['far', 'heart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 4px, text-align: center" >Wishlist</div> </b-nav-item>
+          <b-nav-item href="#" class="d-flex align-items-center flex-column justify-content-center text-align-center "><font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-center" style="font-size: 12px, text-align: center, " /> <div style="font-size: 4px, text-align: center" >Cart</div> </b-nav-item>
+        </div>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -137,6 +141,7 @@ export default {
 }
 </script>
 <style>
+
   .navbar-container{
       background: #683581;
       width:100%;
@@ -154,4 +159,63 @@ export default {
     color: white;
   }
 
+  .navbar-btns {
+        color: white !important;
+    border: 1px solid white !important;
+    background: transparent;
+  }
+
+  .btn-sidebar {
+    height: fit-content;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    max-width: 10% !important;
+  }
+
+  .images {
+    width: 100% !important;
+  }
+
+      .end {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+      }
+
+  @media screen and (max-width:768px) {
+    .logo {
+      max-width: 30% !important;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      text-align: left !important;
+    }
+    .end {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+      width: 100%;
+    }
+    .form {
+      display: flex !important;
+      align-items: center !important;
+      flex-wrap: nowrap !important;
+      margin: 1rem 0;
+    }
+    .form-inline {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.form-inline input {
+  margin-right: 5px;
+}
+  }
 </style>

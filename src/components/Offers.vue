@@ -64,7 +64,33 @@ export default {
                 "speed": 500,
                 "cssEase": "linear",
                 "slidesToShow": 4,
-                "slidesToScroll": 1
+                "slidesToScroll": 1,
+                "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
             }
         }
     },
@@ -91,6 +117,7 @@ export default {
         border-radius: 1rem 1rem 0rem 0rem !important;
         border-bottom-color: transparent !important;
         box-shadow: 0px 3px 55px rgba(0,0,0,0.5);
+        color: black;
     }
     .desc  {
         color: white;
