@@ -79,17 +79,4 @@ export default {
 }
 </script>
 <style>
-    .border-purple {
-        border: 2px solid purple  !important;
-    }
-    .categories .slick-prev {
-  left: 3% !important;
-  top: 45% !important;
-  z-index: 10;
-}
-.categories .slick-next {
-  right: 3% !important;
-  top: 45% !important;
-  z-index: 10;
-}
 </style>

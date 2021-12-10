@@ -25,7 +25,6 @@ import TopBrands from "../components/TopBrands.vue"
 import Clients from "../components/Clients.vue"
 import Footer from "../components/Footer.vue"
 
-
 export default {
   name: "Home",
   components: {

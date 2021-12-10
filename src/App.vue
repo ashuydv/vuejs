@@ -4,7 +4,9 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import url('./style.scss');
+/*
 #app {
   background: #f1f1f1;
 }
@@ -35,4 +37,5 @@
       text-align: left !important;
   }
 }
+*/
 </style>

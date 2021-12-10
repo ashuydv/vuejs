@@ -20,10 +20,3 @@ export default {
 
 }
 </script>
-
-<style>
-    .topbar {
-        background: #3D225C;
-        color: white;
-    }
-</style>
